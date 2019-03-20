@@ -1,0 +1,22 @@
+#Liquibase
+liquibase.enabled: true
+liquibase.change-log: classpath:db/liquibase-changelog.xml
+spring.datasource.url: jdbc:postgresql://localhost:5432/hse
+spring.datasource.username: boris1
+spring.datasource.password: 1111
+
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+      temp:
+      use_jdbc_metadata_defaults: false
+
+
+
+
+
