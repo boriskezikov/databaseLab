@@ -1,8 +1,7 @@
-package com.hse.lab.databaseLab.services;
+package com.hse.lab.databaseLab.service;
 
 
 import com.hse.lab.databaseLab.domain.databaseConnector;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

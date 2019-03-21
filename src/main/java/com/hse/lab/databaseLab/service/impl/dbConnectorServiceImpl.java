@@ -1,8 +1,8 @@
-package com.hse.lab.databaseLab.services.impl;
+package com.hse.lab.databaseLab.service.impl;
 
 import com.hse.lab.databaseLab.domain.databaseConnector;
-import com.hse.lab.databaseLab.repositories.dbConnectorRepository;
-import com.hse.lab.databaseLab.services.dbConnectorService;
+import com.hse.lab.databaseLab.repository.dbConnectorRepository;
+import com.hse.lab.databaseLab.service.dbConnectorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +12,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class dbConnectorServiceImpl implements dbConnectorService {
     private final dbConnectorRepository repository;
-    // сервис - тут основная логика типа записать в бд достать из бд удалить и тд
-    // оверрайд - перегрузка ( похуй забей на нее)
     @Override
     public databaseConnector addRecord(databaseConnector connector) {
         return repository.save(connector);
